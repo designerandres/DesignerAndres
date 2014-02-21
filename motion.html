@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The website of Graphic, Motion, UI artist Andres Aranguibel">
+<meta name="viewport" content="width=device-width" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<title>Video Reel - Andres Aranguibel</title>
+<link rel="icon" 
+      type="image/gif" 
+      href="img/icon.gif" />
+<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+<script>
+	<!--Google Analytics-->
+	var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39443927-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+</script>
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+</head>
+
+<body class="bodyMotion">
+<div class="video">
+	<div id="easyhtml5video" style="position:relative;width:87%;margin:0 auto;">
+    	<video id="vid" controls="controls" poster="img/html5video/Fall_2012.jpg" width="100%" title="Andres Aranguibel Showreel">
+                    <source id="m4v" src="img/html5video/Fall_2012.m4v" type="video/mp4" />
+                    <source id="webm" src="img/html5video/Fall_2012.webm" type="video/webm" />
+                    <source id="ogg" src="img/html5video/Fall_2012.ogg" type="video/ogg" />
+                    <object type="application/x-shockwave-flash" data="img/html5video/flashfox.swf" width="100%" style="position:relative;">
+                        <param name="movie" value="img/html5video/flashfox.swf" />
+                        <param name="allowFullScreen" value="true" />
+                        <param name="flashVars" value="autoplay=false&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=img/html5video/Fall_2012.jpg&amp;src=Fall_2012.m4v" />
+                        <embed src="img/html5video/flashfox.swf" width="100%" style="position:relative;"  flashVars="autoplay=false&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=img/html5video/Fall_2012.jpg&amp;src=Fall_2012.m4v"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+                        <img alt="Andres Aranguibel Showreel" src="img/html5video/Fall_2012.jpg" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
+                    </object>
+       </video>
+    </div>
+    <script src="img/html5video/html5ext.js" type="text/javascript"></script>
+</div>
+<a onclick="history.go(-1);"><div class="closeButton">close</div></a>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+	function adjustGap(){
+		var height = parseInt($(window).height() / 4);
+		var width = $(window).width();
+		if(width <= 780){
+			$(".video").css('padding-top', height + 'px');
+		} else {
+			$(".video").css('padding-top', '15px');
+		}
+	}
+	adjustGap();
+	$(window).resize(adjustGap);
+});
+</script>
+</html>

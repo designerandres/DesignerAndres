@@ -1,0 +1,571 @@
+@charset "UTF-8";
+/* CSS Document */
+/* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}*/
+body{
+	margin:0;
+	padding:0;
+	border-top:20px #FC0 solid;
+	background-color:#f0f0f0;
+}
+*{
+	font-family: Century Gothic, Helvetica;
+}
+a img{
+	border:0;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+*::selection {
+  color: white;
+  background-color: #FC0;
+}
+::moz-selection{background-color:#FC0;color:white;}
+::webkit-selection{background-color:#FC0;color:white;}
+.universalContainer{
+	max-width:1600px;
+	border-left:solid 1px #E0E0E0;
+	border-right:solid 1px #E0E0E0;
+	margin:0 auto;
+	height:100vh;
+}
+.universalContainer .headerFixed{
+	position: fixed;
+	border-top:2px #FC0 solid;
+    top:0;
+    width: 100%;
+	max-width:1600px;
+	margin-left:-1px;
+    z-index: 100;
+	border-left:solid 1px #E0E0E0;
+	border-right:solid 1px #E0E0E0;
+	background-color:white;
+	border-bottom:solid 1px #e0e0e0;
+	min-height:80px;
+	-webkit-box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.10);
+	-moz-box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.10);
+	box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.10);
+}
+.universalContainer .header{
+	margin:15px 20px 20px 20px;
+}
+.universalContainer .header .topLogo{ 
+	display:inline-block;
+	margin-top:10px;
+}
+.universalContainer .body{
+	margin-top:60px;
+	border-left:solid 1px #E0E0E0;
+	border-right:solid 1px #E0E0E0;
+}
+/* NAV */
+.universalContainer .navigation{
+	display:inline-block;
+	float:right;
+	width:650px;
+}
+.universalContainer .navigation .navButtons{
+	width:650px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.universalContainer .navigation a{
+	text-decoration:none;
+	line-height:50px;
+	font-family:Century Gothic, Helvetica;
+	font-size:1.5em;
+	font-weight:100;
+	color:#DCDCDC;
+	margin:auto 5%;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+.universalContainer .navigation a:hover{
+	color:#999;
+}
+/* Body */
+.universalContainer .body #bodyBanner{
+	overflow:hidden;
+	background-size:cover;
+	background-repeat:no-repeat;
+    background-position:center top;
+}
+.universalContainer .body .storyBanner#bodyBanner{
+	background-image:url(../img/bodyBannerStory.jpg);
+	min-height:720px;
+}
+.universalContainer .body .presenceBanner#bodyBanner{
+	background-image:url(../img/bodyBannerPresence.jpg);
+	min-height:500px;
+}
+.universalContainer .body .philosophyBanner#bodyBanner{
+	background-image:url(../img/bodyBanner.jpg);
+	min-height:800px;
+}
+.universalContainer .body .pageBannerImage{
+	height:auto;
+}
+.universalContainer .body .bodyCard#pageOpener{
+	width:97%;
+	min-height:340px;
+	text-align:center;
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.05);
+}
+.border{
+	border-top:2px solid #CCC;
+	width:90px;
+	margin:0 auto;
+}
+.pageOpenerText{
+	min-height:290px;
+	font-family:Century Gothic, Helvetica;
+	font-size:25px;
+	font-weight:100;
+	color:#999;
+	margin:20px auto;
+}
+.bodySeparatorTitle{
+	font-family:Century Gothic, Helvetica;
+	font-size:25px;
+	font-weight:100;
+	color:#999;
+	margin:20px auto;
+	text-align:center;
+}
+.universalContainer .body .bodyCard#pageOpener .pageOpenerText .copy{
+	font-family:Century Gothic, Helvetica;
+	font-size:18px;
+	font-weight:100;
+	color:#999;
+	max-width:800px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:20px;
+	background-color:#FFF;
+	padding:40px;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	display:inline-block;
+}
+.universalContainer .body .bodyCard{
+	width:99%;
+	margin:20px auto;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+}
+.bodyCardSmall{
+	width:92%;
+	padding:20px;
+	margin:20px auto;
+	background-color:#FFF;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+}
+.thirdsContainer{
+	margin: 20px auto;
+	text-align: center;
+}
+.bodyCardThirds{
+	vertical-align: top;
+	overflow: hidden;
+	text-align: left;
+	width:28%;
+	margin:0px 4px;
+	display:inline-block;
+	padding:20px;
+	background-color:#FFF;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+}
+.thirdsTitle{
+	font-family:Century Gothic, Helvetica;
+	font-size:25px;
+	font-weight:200;
+	border-bottom:#E0E0E0 solid 1px;
+	color:#666;
+	margin-bottom:10px;
+	padding-bottom:5px;
+}
+.thirdsSubtitle{
+	font-family:Century Gothic, Helvetica;
+	font-size:16px;
+	font-weight:normal;
+	color:#999;
+	padding-bottom:5px;
+}
+.universalContainer .body .bodyCard .cardBanner{
+	max-height:640px;
+	overflow:hidden;
+}
+.universalContainer .body .bodyCard .cardCopy{
+	background-color:white;
+	padding:40px;
+}
+.cardTitle{
+	min-height:50px;
+	font-family:Century Gothic, Helvetica;
+	font-size:1.5em;
+	font-weight:100;
+	color:#666;
+}
+.cardSubtitle{
+	font-family:Century Gothic, Helvetica;
+	font-size:16px;
+	font-weight:normal;
+	color:#999;
+	border-bottom:#E0E0E0 solid 1px;
+	padding-bottom:5px;
+}
+.bodyCardSmall .cardTitle{
+	text-align:center;
+	font-size:30px;
+	border-bottom:1px solid #E0E0E0;
+	padding-bottom:5px;
+	margin-bottom:20px;
+	min-height:inherit;
+}
+.bodyCardSmall .cardSubtitle{
+	border-bottom:none;
+	text-align:center;
+	line-height:22px;
+}
+.universalContainer .body .bodyCard .cardCopy .cardCopyText{
+	font-family:Century Gothic, Helvetica;
+	font-size:18px;
+	font-weight:100;
+	color:#999;
+	max-width:1350px;
+	margin-left:5%;
+	margin-top:1%;
+	display:inline-block;
+}
+.universalContainer .body .bodyCard .cardCopy .cardCopyTextStory{
+	font-family:Century Gothic, Helvetica;
+	font-size:16px;
+	font-weight:100;
+	color:#999;
+	max-width:1500px;
+	margin-top:1%;
+	display:inline-block;
+}
+.universalContainer .body .bodyCard .cardCopy .cardCopyText span{
+	color:#333;
+}
+.universalContainer .body .bodyCard .cardCopy .cardCopyTextStory span{
+	color:#666;
+}
+.copy span{
+	color:#333;
+}
+.universalContainer .footer{
+	margin-top:30px;
+	color:#999;
+	font-family:Century Gothic, Helvetica;
+	font-size:16px;
+}
+/* STORY */
+.universalContainer .body .bodyCard .cardCopy .cardCopyTextStory .recLetterContainer{
+	height:50px;
+	max-width:430px;
+	text-align:center;
+	line-height:50px;
+	cursor:pointer;
+	text-decoration:none;
+	font-family:Century Gothic, Helvetica;
+	color:#999;
+	margin-top:20px;
+	border-right:10px solid #FC0;
+	border-left:10px solid #FC0;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.08);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.08);
+}
+a, a:hover, a:active{
+	text-decoration: none;
+}
+/* MOTION */
+.bodyMotion{
+	border-left:solid 1px #E0E0E0;
+	border-right:solid 1px #E0E0E0;
+	background-color:#FC0;
+}
+.closeButton{
+	position:relative;
+	z-index:15;
+	color:#999;
+	font-family:Century Gothic, Arial;
+	font-size:20px;
+	margin-top:-100px;
+	margin-left:20px;
+	cursor:pointer;
+	text-align:center;
+	background-color:#FFF;
+	border-right:10px solid #E2E2E2;
+	border-left:10px solid #E2E2E2;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);	
+	max-width:100px;
+	height:40px;
+	line-height:40px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.video{
+	width:100%;
+	position:relative;
+	z-index:1;
+}
+/* PRESENCE */
+.socialButtonsContainer{
+	margin:0 auto;
+	position: relative;
+	text-align:center;
+}
+.socialButtons, .localButtons{
+	height:50px;
+	display:inline-block;
+	width:11.5%;
+	text-align:center;
+	line-height:50px;
+	cursor:pointer;
+	text-decoration:none;
+	font-family:Century Gothic, Helvetica;
+	color:#999;
+	border-right:10px solid #FC0;
+	border-left:10px solid #FC0;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.08);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.08);
+	margin:3px auto;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.localButtons{
+	width:17%;
+	min-width:175px;
+}
+#leadership span{
+	font-size:18px;
+	color:#333;
+}
+ul
+{
+    list-style-type: none;
+}
+#honors span{
+	font-size:18px;
+	color:#333;
+}
+li{
+	margin-bottom:7px;
+}
+.universalContainer .body .bodyCard#galleryCard{
+	display:none;
+}
+@media screen and (max-width:980px) {
+.universalContainer .body .philosophyBanner#bodyBanner{
+	min-height:400px;
+}
+.universalContainer .body .storyBanner#bodyBanner{
+	min-height:400px;
+}
+.universalContainer .body .presenceBanner#bodyBanner{
+	min-height:300px;
+}
+.universalContainer .header{
+	margin:10px;
+}
+.universalContainer .headerFixed{
+	min-height:55px;
+}
+.universalContainer .header .topLogo{ 
+	margin:0 auto;
+	display:block;
+}
+.universalContainer .navigation{
+	float:none;
+	width:100%;
+	margin:0 auto;
+}
+.universalContainer .navigation .navButtons{
+	margin:0 auto;
+	width:470px;
+	display:block;
+}
+.universalContainer .navigation a{
+	line-height:40px;
+	color:#999;
+	margin:0 auto;
+	float:none;
+	margin:0 10px 0 10px;
+}
+.universalContainer .body .bodyCard .cardCopy .cardCopyTextStory .recLetterContainer{
+	margin:0 auto;
+	margin-top:30px;
+	max-width:100%;
+}
+.closeButton{
+	position:relative;
+	z-index:15;
+	color:#99;
+	font-family:Century Gothic, Arial;
+	font-size:20px;
+	padding-top:0;
+	margin:0 auto;
+	margin-top:30px;
+	cursor:pointer;
+	height:50px;
+	line-height:50px;
+	width:60%;
+	max-width:none;
+}
+.socialButtons, .localButtons{
+	width:95%;
+	border-right:10px solid #FC0;
+	border-left:10px solid #FC0;
+	margin:3px auto !important;
+}
+.thirdsContainer{
+	width:97%;
+}
+.bodyCardThirds{
+	width:90%;
+	padding:17px;
+	margin:20px auto;
+	display:block;
+	min-height:0px;
+}
+.bodyCardSmall{
+	width:90%;
+}
+.bodyCardSmall .cardTitle{
+	font-size:25px;
+}
+}
+@media screen and (max-width:480px) {
+.universalContainer .body .philosophyBanner#bodyBanner{
+	min-height:200px;
+}
+.universalContainer .body .storyBanner#bodyBanner{
+	min-height:200px;
+}
+.universalContainer .body .presenceBanner#bodyBanner{
+	min-height:120px;
+}
+
+.universalContainer .header{
+	margin:0;
+}
+.universalContainer .header .topLogo{ 
+	margin-top:13px;
+	margin-left:40px;
+}
+.universalContainer .navigation .navButtons{
+	width:100%;
+	margin-top:20px;
+}
+.universalContainer .menuButton{
+	position:absolute;
+	margin-top:13px;
+	cursor:pointer;	
+	top:0;
+}
+.universalContainer .navigation a{
+	line-height:60px;
+	width:100%;
+	display:block;
+	font-family:Century Gothic, Helvetica;
+	font-size:1.5em;
+	font-weight:100;
+	margin:10px 0 10px 0;
+	text-align:center;
+	background-color:#f6f6f6;
+}
+.universalContainer .navigation a:active{
+		background-color:#f0f0f0;
+}
+.universalContainer .body{
+	margin-top:35px;
+}
+.universalContainer .body .bodyCard#pageOpener .pageOpenerText .copy{
+	padding:30px 20px;
+	text-align:left;
+}
+.bodyCardThirds{
+	padding:30px 20px;
+	text-align:left;
+	width:auto;
+}
+
+.universalContainer .body .bodyCard .cardCopy{
+	padding:20px;
+}
+.universalContainer .body .bodyCard#galleryCard{
+	display:block;
+}
+.universalContainer .body .bodyCard .cardCopy .cardTitle{
+	border-bottom:1px solid #CCC;
+	margin-bottom:10px;
+	padding:0 0 10px 0;
+	font-size:20px;
+	min-height:25px;
+	display:inline-block;
+}
+.universalContainer .body .bodyCard .cardCopy .cardSubtitle{
+	border-bottom:none;
+}
+.universalContainer .body .bodyCard .cardCopy .cardCopyText{
+	font-size:16px;
+	padding:10px 0 10px 0;
+}
+.bodyCardSmall .cardTitle{
+	text-align:center;
+	font-size:20px;
+}
+.bodyCardSmall{
+	width:87%;
+	padding:20px;
+	display:inline-block;
+}
+#leadership{
+	text-align:left;
+}
+#honors{
+	text-align:left;
+}
+ul{
+    list-style-type:none;
+	margin: 0;
+	margin-top:15px;
+	padding: 0;
+}
+li{
+	border-bottom:1px solid #E0E0E0;
+}
+}

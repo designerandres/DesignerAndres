@@ -1,0 +1,3 @@
+#robots.txt file for crawlers
+User-agent: *
+Disallow: 
